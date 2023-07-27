@@ -1,0 +1,21 @@
+services:
+  php:
+    build: ./docker/php
+    container_name: my-php
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html
+    links:
+      - db
+
+  db:
+    build: ./docker/db
+    container_name: my-mysql-php
+    ports:
+      - "3307:3307"
+    volumes:
+      - /var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
