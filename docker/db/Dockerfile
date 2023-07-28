@@ -1,3 +1,3 @@
 FROM mysql:5.7
 # COPY ../database/db.sql /docker-entrypoint-initdb.d/
-EXPOSE 3307
+EXPOSE 3306

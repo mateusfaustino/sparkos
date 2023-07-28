@@ -14,7 +14,7 @@ services:
     build: ./docker/db
     container_name: my-mysql-php
     ports:
-      - "3307:3307"
+      - "3306:3306"
     volumes:
       - /var/lib/mysql
     environment:

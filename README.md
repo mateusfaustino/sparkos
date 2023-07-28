@@ -1,17 +1,2 @@
-# Setup Docker Para Projetos PHP com Apache e Mysql
-
-
-### Passo a passo
-Suba os containers
-```sh
-docker-compose up -d
-```
-
-
-verifique se os containers estão rodando
-```sh
-docker ps
-```
-
-
-abra o navegador em localhost
+# php-login-system
+In this PHP repository I've learned how to create a login system in PHP, and how to show content after being logged in. I've also learned about error handlers, and MySQLi databases, which includes how to make a login form and a signup form.
