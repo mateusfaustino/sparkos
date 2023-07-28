@@ -1,9 +1,10 @@
 <?php
+
     $db_name = "mydb";
     $db_host = "my-mysql-php";
     $db_user = "root";
     $db_pass = "root";
-    $db_port = "3307";
+    $db_port = "3306";
 
     try {
         $pdo = new \PDO(
@@ -13,6 +14,7 @@
             $db_user,
             $db_pass
         );
+        echo 'conectado';
     } catch (Exception $e) {
         print $e->getMessage() . "\n";
     }

@@ -1,0 +1,15 @@
+{
+    "name": "mateu/sparkos",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mateus Faustino",
+            "email": "mateusfaustino2017@gmail.com"
+        }
+    ],
+    "require": {}
+}

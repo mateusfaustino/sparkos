@@ -1,7 +1,20 @@
 <?php
-    require_once('db.php')
+    require 'vendor/autoload.php';
+    use App\database\Migrations\CreateUsersTable;
+    use App\database\migrations\AllMigrations;
+    use App\models\UserModel;
+    require('config/database.php');
+    require_once('app/database/migrations/CreateUsersTable.php');
+    require_once('app/models/UserModel.php');
+    require('app/database/migrations/00AllMigrations.php');
+    
+    $m= new UserModel;
+    $m->all();
+    // $m->downAllMigrations();
+
+    echo "<h1>Hello</h1>";
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -127,4 +140,4 @@
     </main>
 
 </body>
-</html>
+</html> -->
